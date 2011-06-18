@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de_DE" lang="de">
+<head>
+	<title>jquery.carousel</title>
+	<link rel="stylesheet" href="../src/jquery.carousel.css" type="text/css"/>
+	<style>
+		html { height:100%; margin:0 0 1px; padding:0; }
+		body { height:100%; margin:20px; font-size:100.01%; font:14px/20px Georgia, Palatino, Utopia, "Times New Roman", serif; color:#333; }
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div class="carousel" style="width:540px; height:300px;">
+			<ul>
+				<li><img src="images/_001.jpg" alt="1"></li>
+				<li><img src="images/_002.jpg" alt="2"></li>
+				<li><img src="images/_003.jpg" alt="3"></li>
+				<li><img src="images/_004.jpg" alt="4"></li>
+				<li><img src="images/_005.jpg" alt="5"></li>
+				<li><img src="images/_006.jpg" alt="6"></li>
+				<li><img src="images/_007.jpg" alt="7"></li>
+				<li><img src="images/_008.jpg" alt="8"></li>
+			</ul>
+		</div>
+		<button class="prev">zurück</button>
+		<button class="next">vorwärts</button>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/jquery.carousel.js" charset="utf-8"></script>
+	<script>
+		$(document).ready(function() {
+			$('.carousel').carousel();
+		});
+	</script>
+</body>
+</html>
